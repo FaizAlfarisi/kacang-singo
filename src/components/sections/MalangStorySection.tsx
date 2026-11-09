@@ -6,11 +6,11 @@ export default function MalangStorySection() {
   return (
     <section
       id="cerita"
-      className="py-16 sm:py-22 bg-warm-sand/45 border-b-2 border-border-ink"
+      className="py-24 sm:py-32 bg-warm-sand/45 border-b-2 border-border-ink"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12">
         {/* Story Card Wrapper with Peeking Mascot (Pilihan C1) */}
-        <div className="relative rounded-[18px] bg-gradient-to-br from-sun-gold/55 via-warm-cream to-warm-sand p-6 sm:p-11 border-2 border-border-ink shadow-[6px_6px_0_#36251A]">
+        <div className="relative rounded-[18px] bg-gradient-to-br from-sun-gold/55 via-warm-cream to-warm-sand p-7 sm:p-12 lg:p-14 border-2 border-border-ink shadow-[6px_6px_0_#36251A]">
           {/* Peeking Mascot (Pilihan C1) - Positioned so torso base sits flush on top border while gloved hands grip over the border */}
           <div className="absolute right-6 sm:right-12 -top-[1px] -translate-y-[84.5%] z-20 pointer-events-none select-none">
             <div className="relative w-24 h-[85px] sm:w-[120px] sm:h-[106px]">
@@ -24,16 +24,16 @@ export default function MalangStorySection() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             {/* Left Column: Origin Identity */}
             <div className="lg:col-span-5">
-              <span className="inline-block px-3 py-1 rounded-md bg-white border-[1.5px] border-border-ink text-terracotta text-xs font-bold mb-3.5">
+              <span className="inline-block px-3 py-1 rounded-md bg-white border-[1.5px] border-border-ink text-terracotta text-xs font-bold mb-4">
                 {siteConfig.legal.originAssociation}
               </span>
               <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-espresso leading-tight">
                 Rasa Kacang Bumbu Khas Malang yang Selalu Dirindukan
               </h2>
-              <div className="mt-5 p-4 rounded-xl bg-white border-[1.5px] border-border-ink">
+              <div className="mt-6 p-4 sm:p-5 rounded-xl bg-white border-[1.5px] border-border-ink">
                 <span className="block text-[11px] font-bold text-muted">
                   Diproduksi Oleh
                 </span>
@@ -45,7 +45,7 @@ export default function MalangStorySection() {
             </div>
 
             {/* Right Column: Narrative & Moments */}
-            <div className="lg:col-span-7 space-y-4 text-espresso/90 text-sm sm:text-base leading-relaxed">
+            <div className="lg:col-span-7 space-y-5 text-espresso/90 text-sm sm:text-base leading-relaxed">
               <p>
                 Di Malang dan sekitarnya, kacang tanah goreng yang dibalut bumbu
                 cabai merah, gula karamel, dan asam jawa sudah lama jadi teman
@@ -58,16 +58,16 @@ export default function MalangStorySection() {
                 tersebut tetap terjaga: kacangnya garing, bumbunya medok, dan
                 pedasnya pas buat dinikmati kapan saja.
               </p>
-              <div className="pt-2 grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div className="pt-3 grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {STORY_MOMENTS.map((moment) => (
                   <div
                     key={moment.title}
-                    className="p-3.5 rounded-[10px] bg-white border-[1.5px] border-border-ink"
+                    className="p-4 rounded-[10px] bg-white border-[1.5px] border-border-ink"
                   >
                     <h3 className="font-display text-xs sm:text-sm font-extrabold text-terracotta">
                       {moment.title}
                     </h3>
-                    <p className="text-xs text-muted mt-1 leading-relaxed">
+                    <p className="text-xs text-muted mt-1.5 leading-relaxed">
                       {moment.description}
                     </p>
                   </div>

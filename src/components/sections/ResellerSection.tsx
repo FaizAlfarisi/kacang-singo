@@ -7,29 +7,29 @@ export default function ResellerSection() {
   const resellerWaUrl = getResellerWhatsAppUrl();
 
   return (
-    <section id="reseller" className="py-16 sm:py-22 bg-warm-cream">
+    <section id="reseller" className="py-24 sm:py-32 bg-warm-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-[18px] bg-white border-2 border-border-ink shadow-[6px_6px_0_#36251A] p-6 sm:p-11">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="rounded-[18px] bg-white border-2 border-border-ink shadow-[6px_6px_0_#36251A] p-7 sm:p-12 lg:p-14">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             {/* Left Column: B2B Value Proposition & 4 Benefits (8 cols) */}
             <div className="lg:col-span-8">
-              <span className="inline-block px-3 py-1 rounded-md bg-sun-gold border-[1.5px] border-border-ink text-espresso text-xs font-bold mb-3.5">
+              <span className="inline-block px-3 py-1 rounded-md bg-sun-gold border-[1.5px] border-border-ink text-espresso text-xs font-bold mb-4">
                 Peluang Usaha Camilan
               </span>
               <h2 className="font-display text-2xl sm:text-4xl font-extrabold text-espresso tracking-tight">
                 Mau Ikut Jualan Kacang Pedes Singo?
               </h2>
-              <p className="mt-2.5 text-muted text-sm sm:text-base leading-relaxed max-w-2xl">
+              <p className="mt-3 text-muted text-sm sm:text-base leading-relaxed max-w-2xl">
                 Cocok buat tambahan barang dagangan di warung kelontong, kantin,
                 toko oleh-oleh, atau dijual lagi ke teman kantor dan tetangga.
               </p>
 
               {/* 4 Benefit Cards with Custom Line Icons */}
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {RESELLER_BENEFITS.map((benefit) => (
                   <div
                     key={benefit.title}
-                    className="p-4 rounded-xl bg-warm-cream border-[1.5px] border-border-ink"
+                    className="p-5 rounded-xl bg-warm-cream border-[1.5px] border-border-ink"
                   >
                     <div className="flex items-center gap-2.5">
                       <ResellerPointIcon iconId={benefit.iconId} />
@@ -37,7 +37,7 @@ export default function ResellerSection() {
                         {benefit.title}
                       </h3>
                     </div>
-                    <p className="mt-1.5 text-xs sm:text-sm text-muted leading-relaxed">
+                    <p className="mt-2 text-xs sm:text-sm text-muted leading-relaxed">
                       {benefit.description}
                     </p>
                   </div>
@@ -45,7 +45,7 @@ export default function ResellerSection() {
               </div>
 
               {/* Reseller WhatsApp CTA */}
-              <div className="mt-7 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <div className="mt-9 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                 <a
                   href={resellerWaUrl}
                   target="_blank"
@@ -55,7 +55,7 @@ export default function ResellerSection() {
                   <WhatsAppChatIcon className="w-4.5 h-4.5" />
                   <span>Tanya Harga Grosir di WhatsApp</span>
                 </a>
-                <span className="text-xs text-muted font-medium">
+                <span className="text-xs sm:text-sm text-muted font-medium">
                   Admin kami siap bantu info ongkir & paket perdana.
                 </span>
               </div>
@@ -63,7 +63,7 @@ export default function ResellerSection() {
 
             {/* Right Column: Mascot Pilihan B2 (Wink & Sapa) (4 cols) */}
             <div className="lg:col-span-4 flex flex-col items-center">
-              <div className="w-full rounded-[14px] bg-gradient-to-b from-sun-gold to-warm-sand border-2 border-border-ink p-6 text-center">
+              <div className="w-full rounded-[14px] bg-gradient-to-b from-sun-gold to-warm-sand border-2 border-border-ink p-7 text-center">
                 <div className="relative w-44 h-44 sm:w-52 sm:h-52 mx-auto">
                   <Image
                     src="/images/brand/maskot_reseller_wink.png"
@@ -73,11 +73,11 @@ export default function ResellerSection() {
                     sizes="208px"
                   />
                 </div>
-                <p className="mt-2 font-display font-extrabold text-sm text-espresso">
+                <p className="mt-3 font-display font-extrabold text-sm sm:text-base text-espresso">
                   Siap Kirim Partai Kecil & Grosir
                 </p>
-                <p className="text-xs text-muted mt-0.5">
-                  Pengiriman rutin dari Malang & sekitarnya
+                <p className="text-xs text-muted mt-1">
+                  Pengiriman rutin dari Malang hingga seluruh Indonesia
                 </p>
               </div>
             </div>

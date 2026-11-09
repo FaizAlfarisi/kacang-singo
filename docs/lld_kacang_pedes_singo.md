@@ -155,7 +155,7 @@ export const siteConfig = {
     whatsappDisplay: '0812-3456-7890',
     shopeeUrl: 'https://shopee.co.id/kacangpedessingo', // Link toko Shopee terpusat
     instagramUrl: 'https://instagram.com/kacangpedessingo',
-    serviceArea: 'Lawang, Kota & Kabupaten Malang, Sidoarjo, hingga pengiriman seluruh Indonesia via Shopee',
+    serviceArea: 'Malang hingga seluruh Indonesia',
   },
   waTemplates: {
     generalInquiry:
@@ -172,46 +172,25 @@ import { ProductVariant, TastePillar, IngredientItem, ResellerBenefit } from '@/
 
 export const PRODUCT_VARIANTS: ProductVariant[] = [
   {
-    id: 'pack-kecil-10',
-    sku: 'SKU-01',
-    name: 'Pack Kecil (Isi 10 Bungkus)',
-    shortName: 'Pack Kecil Isi 10',
-    packCount: '10 bungkus kecil / pack',
-    netWeightGrams: 120,
+    id: 'jumbo-115g',
+    sku: 'SKU-04',
+    name: 'Kemasan Jumbo',
+    shortName: 'Jumbo 115g',
+    packCount: '1 bungkus besar utuh',
+    netWeightGrams: 115,
     priceIDR: 10000,
-    capType: 'cap_kecil',
-    capLabel: 'Cap Kecil (Horizontal)',
-    image: '/images/products/placeholder_pack_kecil_10.png',
-    imageAlt: 'Kacang Pedes Singo Khas Malang - Pack Kecil Isi 10 Bungkus (120 gram)',
+    capType: 'cap_besar',
+    capLabel: 'Cap Besar (Vertikal)',
+    image: '/images/products/placeholder_jumbo_115g.png',
+    imageAlt: 'Kacang Pedes Singo Khas Malang - Kemasan Jumbo 115 gram',
     isPlaceholder: true,
     isFeatured: false,
-    badge: 'Cocok buat Eceran Warung',
-    segmentTag: 'Reseller & Camilan Saku',
+    badge: 'Praktis Sekali Buka',
+    segmentTag: 'Ngemil Sendiri & Toples Rumah',
     description:
-      'Satu pack isi 10 bungkus kecil. Praktis buat bekal, dibagi-bagi ke teman, atau dijual eceran per bungkus di warung.',
+      'Satu bungkus besar 115 gram. Tinggal buka buat teman nonton atau langsung dituang ke toples camilan di rumah.',
     waMessageTemplate:
-      'Halo Admin Kacang Pedes Singo, saya mau pesan *Pack Kecil (Isi 10 - 120gr)* harga Rp 10.000 sebanyak [... pack]. Mohon info total & ongkir ke [Kecamatan/Kota].',
-  },
-  {
-    id: 'pack-sedang-5',
-    sku: 'SKU-02',
-    name: 'Pack Sedang (Isi 5 Bungkus)',
-    shortName: 'Pack Sedang Isi 5',
-    packCount: '5 bungkus sedang / pack',
-    netWeightGrams: 120,
-    priceIDR: 10000,
-    capType: 'cap_kecil',
-    capLabel: 'Cap Kecil (Horizontal)',
-    image: '/images/products/placeholder_pack_sedang_5.png',
-    imageAlt: 'Kacang Pedes Singo Khas Malang - Pack Sedang Isi 5 Bungkus (120 gram)',
-    isPlaceholder: true,
-    isFeatured: false,
-    badge: 'Pas Buat Stok Harian',
-    segmentTag: 'Ngemil Harian & Reseller',
-    description:
-      'Isi 5 bungkus ukuran sedang dengan porsi lebih puas per bungkusnya. Enak buat stok camilan di rumah atau meja kerja.',
-    waMessageTemplate:
-      'Halo Admin Kacang Pedes Singo, saya mau pesan *Pack Sedang (Isi 5 - 120gr)* harga Rp 10.000 sebanyak [... pack]. Mohon info total & ongkir ke [Kecamatan/Kota].',
+      'Halo Admin Kacang Pedes Singo, saya mau pesan *Kemasan Jumbo (115gr)* harga Rp 10.000 sebanyak [... bungkus]. Mohon info total & ongkir ke [Kecamatan/Kota].',
   },
   {
     id: 'pack-sedang-10',
@@ -235,25 +214,46 @@ export const PRODUCT_VARIANTS: ProductVariant[] = [
       'Halo Admin Kacang Pedes Singo, saya mau pesan *Pack Sedang (Isi 10 - 240gr)* harga Rp 20.000 sebanyak [... pack]. Mohon info total & ongkir ke [Kecamatan/Kota].',
   },
   {
-    id: 'jumbo-115g',
-    sku: 'SKU-04',
-    name: 'Kemasan Jumbo',
-    shortName: 'Jumbo 115g',
-    packCount: '1 bungkus besar utuh',
-    netWeightGrams: 115,
+    id: 'pack-sedang-5',
+    sku: 'SKU-02',
+    name: 'Pack Sedang (Isi 5 Bungkus)',
+    shortName: 'Pack Sedang Isi 5',
+    packCount: '5 bungkus sedang / pack',
+    netWeightGrams: 120,
     priceIDR: 10000,
-    capType: 'cap_besar',
-    capLabel: 'Cap Besar (Vertikal)',
-    image: '/images/products/placeholder_jumbo_115g.png',
-    imageAlt: 'Kacang Pedes Singo Khas Malang - Kemasan Jumbo 115 gram',
+    capType: 'cap_kecil',
+    capLabel: 'Cap Kecil (Horizontal)',
+    image: '/images/products/placeholder_pack_sedang_5.png',
+    imageAlt: 'Kacang Pedes Singo Khas Malang - Pack Sedang Isi 5 Bungkus (120 gram)',
     isPlaceholder: true,
     isFeatured: false,
-    badge: 'Praktis Sekali Buka',
-    segmentTag: 'Ngemil Sendiri & Toples Rumah',
+    badge: 'Pas Buat Stok Harian',
+    segmentTag: 'Ngemil Harian & Reseller',
     description:
-      'Satu bungkus besar 115 gram. Tinggal buka buat teman nonton atau langsung dituang ke toples camilan di rumah.',
+      'Isi 5 bungkus ukuran sedang dengan porsi lebih puas per bungkusnya. Enak buat stok camilan di rumah atau meja kerja.',
     waMessageTemplate:
-      'Halo Admin Kacang Pedes Singo, saya mau pesan *Kemasan Jumbo (115gr)* harga Rp 10.000 sebanyak [... bungkus]. Mohon info total & ongkir ke [Kecamatan/Kota].',
+      'Halo Admin Kacang Pedes Singo, saya mau pesan *Pack Sedang (Isi 5 - 120gr)* harga Rp 10.000 sebanyak [... pack]. Mohon info total & ongkir ke [Kecamatan/Kota].',
+  },
+  {
+    id: 'pack-kecil-10',
+    sku: 'SKU-01',
+    name: 'Pack Kecil (Isi 10 Bungkus)',
+    shortName: 'Pack Kecil Isi 10',
+    packCount: '10 bungkus kecil / pack',
+    netWeightGrams: 120,
+    priceIDR: 10000,
+    capType: 'cap_kecil',
+    capLabel: 'Cap Kecil (Horizontal)',
+    image: '/images/products/placeholder_pack_kecil_10.png',
+    imageAlt: 'Kacang Pedes Singo Khas Malang - Pack Kecil Isi 10 Bungkus (120 gram)',
+    isPlaceholder: true,
+    isFeatured: false,
+    badge: 'Cocok buat Eceran Warung',
+    segmentTag: 'Reseller & Camilan Saku',
+    description:
+      'Satu pack isi 10 bungkus kecil. Praktis buat bekal, dibagi-bagi ke teman, atau dijual eceran per bungkus di warung.',
+    waMessageTemplate:
+      'Halo Admin Kacang Pedes Singo, saya mau pesan *Pack Kecil (Isi 10 - 120gr)* harga Rp 10.000 sebanyak [... pack]. Mohon info total & ongkir ke [Kecamatan/Kota].',
   },
 ];
 
@@ -496,9 +496,13 @@ flowchart TD
 
 ---
 
-### 5.4 `src/components/sections/ProductCatalogSection.tsx` & `src/components/ui/ProductCard.tsx`
-* **Section ID:** `id="katalog"`, `py-16 sm:py-22 px-4 sm:px-6 border-b-[1.5px] border-espresso`
-* **Grid Katalog (Bersih 2x2 Tanpa Tertutupi Maskot):** `max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-9`
+### 5.4 `src/components/sections/ProductCatalogSection.tsx` (`'use client'`) & `src/components/ui/ProductCard.tsx`
+* **Section ID:** `id="katalog"`, `py-24 sm:py-32 border-b-2 border-border-ink`
+* **Horizontal Carousel 2-2 (Urutan Jumbo ke Kecil, Drag-Enabled & Centered Dots):**
+  - Menggunakan track horizontal dengan dukungan **Mouse Click-and-Drag (`cursor-grab active:cursor-grabbing`)** maupun *touch swipe* (`snap-x snap-mandatory scroll-smooth`), di mana setiap kartu berukuran `w-full md:w-[calc(50%-14px)] shrink-0 snap-start`.
+  - Di layar Desktop (`md` ke atas), menampilkan **2 kartu produk sekaligus** dengan pergeseran halus per **1 kartu** (sehingga dapat digeser ke posisi kiri `[Jumbo, Pack Sedang 10]`, tengah `[Pack Sedang 10, Pack Sedang 5]`, maupun kanan `[Pack Sedang 5, Pack Kecil 10]`).
+  - Dilengkapi tombol panah melayang di tengah sisi kiri dan kanan (`top-1/2 -translate-y-1/2`) serta **indikator titik-titik (*pagination dots*) di tengah bawah** (`justify-center`).
+  - Banner pengiriman di bagian bawah bertuliskan: *"Melayani pengiriman ke Malang hingga seluruh Indonesia"*.
 
 * **Kode Struktur `ProductCard.tsx`:**
 ```tsx

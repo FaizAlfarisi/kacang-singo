@@ -13,7 +13,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
   return (
     <article
-      className={`group relative flex flex-col rounded-[14px] bg-white border-2 transition-all duration-200 overflow-hidden ${
+      className={`group relative w-full flex flex-col rounded-[14px] bg-white border-2 transition-all duration-200 overflow-hidden ${
         product.isFeatured
           ? 'border-terracotta shadow-[6px_6px_0_#B84227]'
           : 'border-border-ink shadow-[5px_5px_0_#36251A]'
@@ -34,12 +34,13 @@ export default function ProductCard({ product }: ProductCardProps) {
       </div>
 
       {/* Product Image Stage */}
-      <div className="relative mx-5 mt-3.5 aspect-4/3 rounded-[10px] bg-warm-sand/60 overflow-hidden border-[1.5px] border-border-ink">
+      <div className="relative mx-5 mt-3.5 aspect-4/3 rounded-[10px] bg-warm-sand/60 overflow-hidden border-[1.5px] border-border-ink select-none">
         <Image
           src={product.image}
           alt={product.imageAlt}
           fill
-          className="object-contain p-3.5 transition-transform duration-300 group-hover:scale-103"
+          draggable={false}
+          className="object-contain p-3.5 transition-transform duration-300 group-hover:scale-103 pointer-events-none"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 560px"
         />
       </div>
@@ -81,6 +82,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             href={waLink}
             target="_blank"
             rel="noopener noreferrer"
+            draggable={false}
             className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-brand-green hover:bg-brand-green-hover text-white font-bold text-xs border-[1.5px] border-border-ink shadow-[2px_2px_0_#36251A] transition-colors"
           >
             <WhatsAppChatIcon className="w-3.5 h-3.5" />
@@ -91,6 +93,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             href={siteConfig.contact.shopeeUrl}
             target="_blank"
             rel="noopener noreferrer"
+            draggable={false}
             className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-amber hover:bg-amber-hover text-white font-bold text-xs border-[1.5px] border-border-ink shadow-[2px_2px_0_#36251A] transition-colors"
           >
             <ShopeeBagIcon className="w-3.5 h-3.5" />

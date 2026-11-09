@@ -16,8 +16,7 @@ export const siteConfig = {
     whatsappDisplay: '0812-3456-7890',
     shopeeUrl: 'https://shopee.co.id/kacangpedessingo',
     instagramUrl: 'https://instagram.com/kacangpedessingo',
-    serviceArea:
-      'Malang & pengiriman seluruh Indonesia',
+    serviceArea: 'Malang hingga seluruh Indonesia',
   },
   waTemplates: {
     generalInquiry:
