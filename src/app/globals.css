@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --bg-warm-cream: #FDF9F3;
+  --bg-warm-sand: #F5ECE0;
+  --bg-sun-gold: #F9E398;
+  --primary-terracotta: #B84227;
+  --primary-terracotta-hover: #9E361E;
+  --accent-amber: #D67D28;
+  --accent-amber-hover: #BD6C1F;
+  --brand-green: #1F5F3A;
+  --brand-green-hover: #17492C;
+  --text-espresso: #2B1B12;
+  --border-ink: #36251A;
+  --text-muted: #6E5A4F;
+  --border-warm: #DECBB6;
+}
+
+@theme inline {
+  --color-warm-cream: var(--bg-warm-cream);
+  --color-warm-sand: var(--bg-warm-sand);
+  --color-sun-gold: var(--bg-sun-gold);
+  --color-terracotta: var(--primary-terracotta);
+  --color-terracotta-hover: var(--primary-terracotta-hover);
+  --color-amber: var(--accent-amber);
+  --color-amber-hover: var(--accent-amber-hover);
+  --color-brand-green: var(--brand-green);
+  --color-brand-green-hover: var(--brand-green-hover);
+  --color-espresso: var(--text-espresso);
+  --color-border-ink: var(--border-ink);
+  --color-muted: var(--text-muted);
+  --color-border-warm: var(--border-warm);
+  --font-display: var(--font-bricolage);
+  --font-sans: var(--font-jakarta);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-warm-cream);
+  color: var(--text-espresso);
+}
+
+body {
+  font-family: var(--font-jakarta), sans-serif;
+  background-image: radial-gradient(rgba(184, 66, 39, 0.045) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
