@@ -15,61 +15,61 @@ export default function HeroSection() {
   const waUrl = getGeneralWhatsAppUrl();
 
   return (
-    <section className="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 border-b-2 border-border-ink">
+    <section className="relative overflow-hidden pt-14 pb-20 sm:pt-16 sm:pb-24 lg:pt-20 lg:pb-28 border-b-2 border-border-ink">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column: Brand Value Proposition (7 cols) */}
           <div className="lg:col-span-7 text-left">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-sun-gold border-[1.5px] border-border-ink shadow-[2px_2px_0_#36251A] text-espresso text-xs sm:text-sm font-bold mb-6">
-              <ChiliRibbonIcon className="w-4 h-4 text-terracotta" />
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-md bg-sun-gold border-[1.5px] border-border-ink shadow-[2px_2px_0_#36251A] text-espresso text-[11px] sm:text-sm font-bold mb-6">
+              <ChiliRibbonIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-terracotta" />
               <span>{siteConfig.legal.originAssociation}</span>
             </div>
 
-            <h1 className="font-display text-3xl sm:text-5xl lg:text-[3.35rem] font-extrabold text-espresso tracking-tight leading-[1.08]">
+            <h1 className="font-display text-[1.75rem] sm:text-5xl lg:text-[3.35rem] font-extrabold text-espresso tracking-tight leading-[1.16] sm:leading-[1.08]">
               Renyah Kacangnya,{' '}
               <span className="text-terracotta relative inline-block">
                 Pedasnya Bikin Kangen!
-                <BrushUnderlineSvg className="absolute -bottom-1.5 left-0 w-full h-2.5" />
+                <BrushUnderlineSvg className="absolute -bottom-1 sm:-bottom-1.5 left-0 w-full h-2 sm:h-2.5" />
               </span>
             </h1>
 
-            <p className="mt-6 text-base sm:text-lg text-muted leading-relaxed max-w-xl">
+            <p className="mt-5 sm:mt-6 text-sm sm:text-lg text-muted leading-relaxed max-w-xl">
               {siteConfig.subTagline}
             </p>
 
-            {/* Architectural Spec Strip (No emojis, custom line SVGs) */}
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 border-2 border-border-ink rounded-xl bg-white shadow-[4px_4px_0_#36251A] overflow-hidden divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-border-ink">
-              <div className="p-4 flex items-center gap-3">
-                <FlameSpecIcon className="w-5.5 h-5.5 shrink-0" />
+            {/* Architectural Spec Strip (Compact 3-col horizontal on mobile with comfortable vertical breathing room) */}
+            <div className="mt-9 sm:mt-10 grid grid-cols-3 border-[1.5px] sm:border-2 border-border-ink rounded-xl bg-white shadow-[3px_3px_0_#36251A] sm:shadow-[4px_4px_0_#36251A] overflow-hidden divide-x-[1.5px] sm:divide-x-2 divide-border-ink">
+              <div className="py-3.5 px-2 sm:p-4 flex flex-col sm:flex-row items-center text-center sm:text-left gap-2 sm:gap-3">
+                <FlameSpecIcon className="w-4.5 h-4.5 sm:w-5.5 sm:h-5.5 shrink-0" />
                 <div>
-                  <strong className="block text-[13px] font-extrabold text-espresso leading-tight">
-                    Pedas Manis Medok
+                  <strong className="block text-[11px] sm:text-[13px] font-extrabold text-espresso leading-tight">
+                    Pedas Medok
                   </strong>
-                  <span className="text-xs text-muted">
+                  <span className="hidden sm:block text-xs text-muted">
                     Bumbu karamel cabai asli
                   </span>
                 </div>
               </div>
 
-              <div className="p-4 flex items-center gap-3">
-                <LeafSpecIcon className="w-5.5 h-5.5 shrink-0" />
+              <div className="py-3.5 px-2 sm:p-4 flex flex-col sm:flex-row items-center text-center sm:text-left gap-2 sm:gap-3">
+                <LeafSpecIcon className="w-4.5 h-4.5 sm:w-5.5 sm:h-5.5 shrink-0" />
                 <div>
-                  <strong className="block text-[13px] font-extrabold text-espresso leading-tight">
+                  <strong className="block text-[11px] sm:text-[13px] font-extrabold text-espresso leading-tight">
                     Tanpa Pengawet
                   </strong>
-                  <span className="text-xs text-muted">
+                  <span className="hidden sm:block text-xs text-muted">
                     5 bahan dapur pilihan
                   </span>
                 </div>
               </div>
 
-              <div className="p-4 flex items-center gap-3">
-                <PriceSpecIcon className="w-5.5 h-5.5 shrink-0" />
+              <div className="py-3.5 px-2 sm:p-4 flex flex-col sm:flex-row items-center text-center sm:text-left gap-2 sm:gap-3">
+                <PriceSpecIcon className="w-4.5 h-4.5 sm:w-5.5 sm:h-5.5 shrink-0" />
                 <div>
-                  <strong className="block text-[13px] font-extrabold text-espresso leading-tight">
-                    Mulai Rp 10.000
+                  <strong className="block text-[11px] sm:text-[13px] font-extrabold text-espresso leading-tight">
+                    Mulai Rp 10rb
                   </strong>
-                  <span className="text-xs text-muted">
+                  <span className="hidden sm:block text-xs text-muted">
                     4 pilihan ukuran kemasan
                   </span>
                 </div>
@@ -77,28 +77,28 @@ export default function HeroSection() {
             </div>
 
             {/* Primary & Secondary CTAs */}
-            <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <div className="mt-9 sm:mt-10 flex flex-row items-center gap-3 sm:gap-4">
               <a
                 href="#katalog"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-[10px] bg-terracotta hover:bg-terracotta-hover text-white font-bold text-base border-2 border-border-ink shadow-[4px_4px_0_#36251A] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_#36251A] transition-all"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3.5 py-3 sm:px-6 sm:py-3.5 rounded-[10px] bg-terracotta hover:bg-terracotta-hover text-white font-bold text-xs sm:text-base border-[1.5px] sm:border-2 border-border-ink shadow-[3px_3px_0_#36251A] sm:shadow-[4px_4px_0_#36251A] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_#36251A] transition-all"
               >
-                <ShopeeBagIcon className="w-4.5 h-4.5" />
-                <span>Lihat Varian & Harga</span>
+                <ShopeeBagIcon className="w-4 h-4 sm:w-4.5 sm:h-4.5 shrink-0" />
+                <span>Lihat Varian</span>
               </a>
               <a
                 href={waUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-[10px] bg-white hover:bg-warm-sand text-espresso font-bold text-base border-2 border-border-ink shadow-[4px_4px_0_#36251A] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_#36251A] transition-all"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3.5 py-3 sm:px-6 sm:py-3.5 rounded-[10px] bg-white hover:bg-warm-sand text-espresso font-bold text-xs sm:text-base border-[1.5px] sm:border-2 border-border-ink shadow-[3px_3px_0_#36251A] sm:shadow-[4px_4px_0_#36251A] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_#36251A] transition-all"
               >
-                <WhatsAppChatIcon className="w-4.5 h-4.5 text-brand-green" />
-                <span>Pesan lewat WhatsApp</span>
+                <WhatsAppChatIcon className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-brand-green shrink-0" />
+                <span>Chat WhatsApp</span>
               </a>
             </div>
           </div>
 
-          {/* Right Column: Authentic Malang Packaging Poster Stage (5 cols) */}
-          <div className="lg:col-span-5">
+          {/* Right Column: Authentic Malang Packaging Poster Stage (Hidden on mobile/tablet, visible on lg+) */}
+          <div className="hidden lg:block lg:col-span-5">
             <div className="relative mx-auto max-w-md lg:max-w-none bg-gradient-to-b from-sun-gold to-warm-sand border-2 border-border-ink rounded-[18px] p-6 sm:p-7 shadow-[6px_6px_0_#36251A]">
               <div className="relative border-[1.5px] border-dashed border-espresso/30 rounded-xl p-5 sm:p-6 flex flex-col items-center text-center">
                 {/* Original Unmodified Brand Logo */}
@@ -108,7 +108,7 @@ export default function HeroSection() {
                     alt="Logo Kacang Pedes Singo"
                     fill
                     className="object-contain"
-                    sizes="(max-width: 640px) 176px, 208px"
+                    sizes="208px"
                     priority
                   />
                 </div>
@@ -120,7 +120,7 @@ export default function HeroSection() {
                     alt="Maskot Kacang Pedes Singo Khas Malang"
                     fill
                     className="object-contain drop-shadow-[0_10px_14px_rgba(43,27,18,0.18)]"
-                    sizes="(max-width: 640px) 208px, 256px"
+                    sizes="256px"
                     priority
                   />
                 </div>

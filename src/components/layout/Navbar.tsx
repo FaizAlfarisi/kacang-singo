@@ -10,16 +10,16 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 bg-warm-cream/95 backdrop-blur-md border-b-2 border-border-ink">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 sm:h-18 flex items-center justify-between">
         {/* Brand Logo */}
         <a href="#" className="flex items-center gap-3">
-          <div className="relative h-10 w-32 sm:h-11 sm:w-36">
+          <div className="relative h-8 w-26 sm:h-11 sm:w-36">
             <Image
               src="/images/brand/logo_singo_clean.png"
               alt="Logo Kacang Pedes Singo"
               fill
               className="object-contain object-left"
-              sizes="144px"
+              sizes="(max-width: 640px) 104px, 144px"
               priority
             />
           </div>
@@ -53,12 +53,12 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-          className="md:hidden p-2 rounded-lg text-espresso hover:bg-warm-sand border-[1.5px] border-border-ink"
+          className="md:hidden p-1.5 rounded-lg text-espresso hover:bg-warm-sand border-[1.5px] border-border-ink"
           aria-expanded={isMobileMenuOpen}
           aria-label="Buka menu navigasi"
         >
           <svg
-            className="w-6 h-6"
+            className="w-5 h-5"
             fill="none"
             stroke="currentColor"
             strokeWidth={2.2}
@@ -83,13 +83,13 @@ export default function Navbar() {
 
       {/* Mobile Menu Drawer */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-warm-cream border-b-2 border-border-ink px-4 pt-2 pb-5 space-y-2">
+        <div className="md:hidden bg-warm-cream border-b-2 border-border-ink px-4 pt-2 pb-4 space-y-1.5">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.href}
               href={item.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block py-2.5 px-3 rounded-lg text-base font-bold text-espresso hover:bg-warm-sand"
+              className="block py-2 px-3 rounded-lg text-sm font-bold text-espresso hover:bg-warm-sand"
             >
               {item.label}
             </a>
@@ -97,9 +97,9 @@ export default function Navbar() {
           <a
             href="#katalog"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="mt-2 w-full inline-flex items-center justify-center gap-2 bg-terracotta text-white font-bold text-sm py-3 rounded-lg border-[1.5px] border-border-ink shadow-[3px_3px_0_#36251A]"
+            className="mt-2 w-full inline-flex items-center justify-center gap-2 bg-terracotta text-white font-bold text-xs py-2.5 rounded-lg border-[1.5px] border-border-ink shadow-[2px_2px_0_#36251A]"
           >
-            <ShopeeBagIcon className="w-4 h-4" />
+            <ShopeeBagIcon className="w-3.5 h-3.5" />
             <span>Pesan Sekarang</span>
           </a>
         </div>
