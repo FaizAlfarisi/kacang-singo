@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: 'Renyah Kacangnya, Pedasnya Bikin Kangen!',
   subTagline:
     'Kacang tanah goreng renyah dengan bumbu cabai, gula, dan asam jawa yang medok. Camilan pas buat teman santai, kerja, atau ngumpul bareng keluarga.',
-  domainUrl: 'https://kacangpedessingo.com',
+  domainUrl: 'https://singo.mbois.top/',
   legal: {
     pirtNumber: '2113514011294-28',
     halalNumber: 'ID35110014460411223',
@@ -12,10 +12,10 @@ export const siteConfig = {
     originAssociation: 'Camilan Khas Malang',
   },
   contact: {
-    whatsappNumber: '6281234567890',
-    whatsappDisplay: '0812-3456-7890',
-    shopeeUrl: 'https://shopee.co.id/kacangpedessingo',
-    instagramUrl: 'https://instagram.com/kacangpedessingo',
+    whatsappNumber: '6289666070999',
+    whatsappDisplay: '0896-6607-0999',
+    shopeeUrl: 'https://id.shp.ee/BuRQsaWM',
+    instagramUrl: 'https://www.instagram.com/kacang_pedes_singo/',
     serviceArea: 'Malang hingga seluruh Indonesia',
   },
   waTemplates: {
